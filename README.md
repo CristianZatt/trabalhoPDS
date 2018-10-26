@@ -10,6 +10,7 @@
 ```
 brew install node
 npm install --global vue-cli
+npm install mvn -g
 ```
 
 #### Linux
@@ -18,6 +19,7 @@ npm install --global vue-cli
 sudo apt update
 sudo apt install node
 npm install --global vue-cli
+npm install mvn -g
 ```
 
 #### Windows
@@ -25,6 +27,7 @@ npm install --global vue-cli
 ```
 choco install npm
 npm install --global vue-cli
+npm install mvn -g
 ```
 
 (Oder per Installer von der Website: https://nodejs.org/en/download/)
