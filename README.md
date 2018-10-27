@@ -85,13 +85,6 @@ Install vue-devtools Browser extension https://github.com/vuejs/vue-devtools and
 
 ![vue-devtools-chrome](screenshots/vue-devtools-chrome.png)
 
-## IntelliJ integration
-
-There's a blog post: https://blog.jetbrains.com/webstorm/2018/01/working-with-vue-js-in-webstorm/
-
-Especially the `New... Vue Component` looks quite cool :)
-
-
 
 ## HTTP calls from Vue.js to (Spring Boot) REST backend
 
