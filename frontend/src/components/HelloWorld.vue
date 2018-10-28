@@ -137,7 +137,8 @@
           href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions'
         }
 
-      ]
+      ],
+      msg: 'Welcome to Your Vue.js App',
     })
   }
 </script>
