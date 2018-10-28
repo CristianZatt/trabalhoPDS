@@ -10,6 +10,7 @@
 ```
 brew install node
 npm install --global vue-cli
+npm install mvn -g
 ```
 
 #### Linux
@@ -18,6 +19,7 @@ npm install --global vue-cli
 sudo apt update
 sudo apt install node
 npm install --global vue-cli
+npm install mvn -g
 ```
 
 #### Windows
@@ -25,6 +27,7 @@ npm install --global vue-cli
 ```
 choco install npm
 npm install --global vue-cli
+npm install mvn -g
 ```
 
 (Oder per Installer von der Website: https://nodejs.org/en/download/)
@@ -81,13 +84,6 @@ That’s it!
 Install vue-devtools Browser extension https://github.com/vuejs/vue-devtools and get better feedback, e.g. in Chrome:
 
 ![vue-devtools-chrome](screenshots/vue-devtools-chrome.png)
-
-## IntelliJ integration
-
-There's a blog post: https://blog.jetbrains.com/webstorm/2018/01/working-with-vue-js-in-webstorm/
-
-Especially the `New... Vue Component` looks quite cool :)
-
 
 
 ## HTTP calls from Vue.js to (Spring Boot) REST backend
