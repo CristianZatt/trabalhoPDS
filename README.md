@@ -1,82 +1,87 @@
 # Trabalho de PDS
 
+## Frontend Vue:
 
-## Setup Vue.js & Spring Boot
+Vue2.js (Vue CLI 3) </br>
+Vuetify (visual) </br>
+Axios (chamadas de WS) </br>
 
-### Prerequisites
+Vue é um framework javascript que vem ganhamdo muito mercado, dado a sua boa curva de aprendizagem bem como interessante estruturação com componentes, e um CLI bastante útil na geração de projetos frontend. Trouxe essa tecnologia para um projeto da UNISC que está começando, e em nosso piloto para um PWA vem se mostrando muito eficaz, desbancando o antes utilizado Ionic.
 
-#### MacOSX
+Vuetify é ma biblioteca desenvolvida para o vue que traz uma estilização maior. Poderia-se comparar a um bootstrap para vue.
+
+Axios é uma biblioteca muito útil e recomendada pela comunidade Vue para executar requisições a WS
+
+
+## Backend Java + Spring boot:
+
+Projeto maven gerado por https://start.spring.io com spring boot 2.1.0 e as dependências Web, JPA e Rest Repositories
+
+O JPA traz aqui uma integração interessante do projeto com o banco, pois utiliza o hibernate.
+
+## Estrutura do projeto
+```
+TrabalhoPDS
+├─┬ backend     → modulo backend com spring boot
+│ ├── src
+│ └── pom.xml
+├─┬ frontend    → modulo frontend com vue2.js
+│ ├── src
+│ └── pom.xml
+└── pom.xml     → Maven parent gerenciando os modulos
+```
+Vale destacar também o frontend-maven-pluginqu auxilia na gerencia do projeto pelo maven naparte do frontend, uma vez que o Vue CLI não traz em seus padrões o maven como o start.spring.io faz.
+
+## Banco de dados
+
+É preciso ter um banco postgres rodando, com uma base com o mesmo nome e senha do arquivo application.properties
+
+Ao inicializar o projeto ele irá criar as tabelas nescessárias para seu funcionamento
+
+## Compilar e rodar localmente no Windows
+Primeiro instalar o node 11  https://nodejs.org/en/download/
+E o java JDK 8.
 
 ```
-brew install node
 npm install --global vue-cli
 npm install mvn -g
 ```
 
-#### Linux
+#### Configurar o projeto
 
 ```
-sudo apt update
-sudo apt install node
-npm install --global vue-cli
-npm install mvn -g
-```
-
-#### Windows
-
-```
-choco install npm
-npm install --global vue-cli
-npm install mvn -g
-```
-
-(Oder per Installer von der Website: https://nodejs.org/en/download/)
-
-## Project setup
-
-```
-git clone https://github.com/CristianZatt/trabalhoPDS
+git clone https://github.com/CristianZatt/simuladorNegociacaoAcao
 
 npm install //instala as dependencias
 ```
 
-## Estrutura
-```
-spring-boot-vuejs
-├─┬ backend     → backend module with Spring Boot code
-│ ├── src
-│ └── pom.xml
-├─┬ frontend    → frontend module with Vue.js code
-│ ├── src
-│ └── pom.xml
-└── pom.xml     → Maven parent pom managing both modules
-```
+#### Rodando localmente
 
-## First App run
+Compilar e instalar o que for nescessário
 
 ```
 mvn clean install
 ```
 
-Run our complete Spring Boot App:
+Rodar o app completo (front + back)
 
 ```
 mvn --projects backend spring-boot:run
 ```
 
-Now go to http://localhost:8088/ and have a look at your first Vue.js Spring Boot App.
+Em http://localhost:8088/ temos o frontend vue.
+Em http://localhost:8080/ temos o backend.
 
+## Desenvolvimento rápido do frontend
 
-
-## fast feedback with webpack-dev-server
-
-The webpack-dev-server, which will update and build every change through all the parts of the JavaScript build-chain, is pre-configured in Vue.js out-of-the-box! So the only thing needed to get fast feedback development-cycle is to cd into `frontend` and run:
+Utilizando das ferramentas fornecidas pelo Vue CLI é possível rodar o frontend desacoplado, em um servidor local com hotdeploy para um desenvolvimento mais ágil.
 
 ```
+cd frontend
 npm run dev
 ```
 
-That’s it! 
+
 
 
 ## Browser developer tools extension
