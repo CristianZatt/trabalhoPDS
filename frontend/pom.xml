@@ -4,7 +4,7 @@
 	<artifactId>frontend</artifactId>
 
 	<parent>
-		<groupId>br.pds</groupId>
+		<groupId>com.trabalhoPDS</groupId>
 		<artifactId>trabalhoPDS</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
