@@ -52,7 +52,7 @@ npm install mvn -g
 ```
 git clone https://github.com/CristianZatt/simuladorNegociacaoAcao
 
-npm install //instala as dependencias
+npm install //instala as dependencias (rodar dentro da pasta frontend)
 ```
 
 #### Rodando localmente
